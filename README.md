@@ -13,6 +13,12 @@ Spatial data is widely used in biomedical research to investigate various aspect
 3. difficult_tissue_test.ipynb : This notebook is testing SAM with Mesmer-generated prompts on the HTAN CRC CyCIF data. We sampled a small, typically difficult-to-segment region with closely packes cells to evaluate SAM's performance qualitatively, showing how the MESMER mask is changed by SAM.
 4. 
 ## Results
+Improving specialized segmentation models with SAM:
+![alt text](Figures/seg_comparison.png)
+MedSAM:
+![alt text](Figures/MedSAM_comparison.png)
+Testing Mesmer+SAM on difficult tissue:
+![alt text](Figures/difficult_tissue.png)
 
 ## Tools used
 1. SAM
