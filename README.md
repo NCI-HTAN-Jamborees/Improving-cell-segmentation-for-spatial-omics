@@ -16,9 +16,9 @@ Spatial data is widely used in biomedical research to investigate various aspect
 Improving specialized segmentation models with SAM:
 ![alt text](Figures/seg_comparison.png)
 MedSAM:
-![alt text](Figures/MedSAM_comparison.png)
+![alt text](Figures/MedSAM.png)
 Testing Mesmer+SAM on difficult tissue:
-![alt text](Figures/difficult_tissue.png)
+![alt text](Figures/tissue_test.png)
 
 ## Tools used
 1. SAM
