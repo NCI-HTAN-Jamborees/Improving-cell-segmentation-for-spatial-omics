@@ -31,8 +31,6 @@ Testing Mesmer+SAM on difficult tissue:
 6. matplotlib.pyplot
 7. torch
 
-## Future directions
-
 ## Team 
 * Zac Sims (Oregon Health and Science University)
 * Mark Wang (Oregon Health and Science University)
