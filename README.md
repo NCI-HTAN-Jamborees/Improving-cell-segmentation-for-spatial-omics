@@ -1,10 +1,27 @@
-# Improving-cell-segmentation-for-spatial-omics
+# Improving-cell-segmentation-for-spatial-omics 
+## HTAN Data Jamboree Decemmber 4th-7th 2023 
 ## Problem statement 
-Spatial-omics are widely used in biological research to investigate various aspects of biological systems such as identifying key cellular groups that co-occur in a tissue. First key step to answer such biological questions is to perform segmentation to get the cells. There have been various methods that have been developed to perform the task of cell segmentation in imaging data but they either require manual labels as part of algorithm training or do not generalize well to different datasets. Recently, there have been significant progress made in the field of foundation models such as ChatGPT that have been trained on large amounts of data that are capable of performing various self-supervised tasks. One example of this, Segment Anything Model (SAM) is well-suited for cell-segmentation in imaging data. One major advantage of using SAM is that it does not require ground truth labels as part of its training and can predict segmentation masks based upon prompts such as points or bounding box that assist in object localization within the image. As there are various specialized segmentation models out there such as MESMER and CellPose our goal was to test whether we could use the output of these specialized models as input for SAM to improve the cell segmentation in images. 
+Spatial data is widely used in biomedical research to investigate various aspects of biological systems such as identifying key cellular groups that coexist in a tissue during disease progression. Cell segmentation is a key preprocessing step for spatial data required to answer such biological question. Although there are various image segmentation tools available, they either require ground truth labels as part of algorithm training or do not generalize well to different datasets. Foundation models such as [Segment Anything Model](https://segment-anything.com/) are an active area of research that are aimed at tackling these challenges and perform self-supervised tasks on a large variety of datasets. One major advantage of SAM is that it does not require ground truth labels as part of its training to perform segmentation on a dataset, it can be initialized easily with prompts to guide the segmentation process. The goal of this project is to evaluate SAM's performance at cell-segmentation in tissuenet and HTAN CRC CycIF data using different kinds of prompts ('points' and 'bounding boxes') generated using specialized models such as [MESMER](https://www.deepcell.org/predict), [StarDist](https://github.com/stardist/stardist) and [Cellpose](https://www.cellpose.org/).
 
-## Basic Workflow 
+## Basic Workflow
+
+
+
+## Code Description
+1. Segmentation_comparison.ipynb : This notebook is comparing segmentation performed by SAM when given prompts from Mesmer, StarDist and Cellpose on 10 tissuenet images. Different prompts i.e., points, bounding boxes and both were also used to perform comparisons. 
+2. MedSam.ipynb : This notebook is testing a different implementation of SAM - [MedSAM](https://github.com/bowang-lab/MedSAM) on tissuenet images using prompts generated with Mesmer.
+3. difficult_tissue_test.ipynb : This notebook is testing Mesmer with SAM using both prompts on the HTAN CRC CyCIF data. We sampled a small difficult region with closely packes cells to evaluate SAM's performance qualitatively showing how the MESMER mask is improved by SAM implementation.
+4. 
+## Results
 
 ## Tools used
+1. SAM
+2. Mesmer
+3. Cellpose
+4. StarDist
+5. Skimage
+6. matplotlib.pyplot
+7. torch
 
 ## Future directions
 
