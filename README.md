@@ -15,8 +15,10 @@ Spatial data is widely used in biomedical research to investigate various aspect
 ## Results
 Improving specialized segmentation models with SAM:
 ![alt text](Figures/seg_comparison.png)
+
 MedSAM:
 ![alt text](Figures/MedSAM.png)
+
 Testing Mesmer+SAM on difficult tissue:
 ![alt text](Figures/tissue_test.png)
 
@@ -32,3 +34,9 @@ Testing Mesmer+SAM on difficult tissue:
 ## Future directions
 
 ## Team 
+* Zac Sims (Oregon Health and Science University)
+* Mark Wang (Oregon Health and Science University)
+* Robert Heussner (Oregon Health and Science University)
+* Melissa Chua (Stanford University)
+* Anthony Lagnado (Mayo Clinic)
+* Harsimran Kaur (Vanderbilt University)
