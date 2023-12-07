@@ -8,9 +8,9 @@ Spatial data is widely used in biomedical research to investigate various aspect
 
 
 ## Code Description
-1. Segmentation_comparison.ipynb : This notebook is comparing segmentation performed by SAM when given prompts from Mesmer, StarDist and Cellpose on 10 tissuenet images. Different prompts i.e., points, bounding boxes and both were also used to perform comparisons. 
-2. MedSam.ipynb : This notebook is testing a different implementation of SAM - [MedSAM](https://github.com/bowang-lab/MedSAM) on tissuenet images using prompts generated with Mesmer.
-3. difficult_tissue_test.ipynb : This notebook is testing Mesmer with SAM using both prompts on the HTAN CRC CyCIF data. We sampled a small difficult region with closely packes cells to evaluate SAM's performance qualitatively showing how the MESMER mask is improved by SAM implementation.
+1. segmentation_comparison.ipynb : This notebook is comparing segmentation performance of SAM when given prompts (points and bounding boxes) from Mesmer, StarDist and Cellpose on 10 tissuenet images. 
+2. MedSam.ipynb : This notebook is testing a different implementation of SAM - [MedSAM](https://github.com/bowang-lab/MedSAM) on a tissuenet image using prompts generated with Mesmer.
+3. difficult_tissue_test.ipynb : This notebook is testing SAM with Mesmer-generated prompts on the HTAN CRC CyCIF data. We sampled a small, typically difficult-to-segment region with closely packes cells to evaluate SAM's performance qualitatively, showing how the MESMER mask is changed by SAM.
 4. 
 ## Results
 
